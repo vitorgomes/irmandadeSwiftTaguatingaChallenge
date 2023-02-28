@@ -5,15 +5,14 @@
 //  Created by Vitor Gomes on 26/02/23.
 //
 
-/* PENDING ACTIVITIES:
- - Refactor the whole project.
- */
+// TODO:  Refactor the whole project
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         
+        // MARK: App title
         VStack(spacing: 30) {
             HStack {
                 Text("Challenge time:")
@@ -22,6 +21,7 @@ struct ContentView: View {
                 Spacer()
             }
             
+            // MARK: Shapes stack
             HStack {
                 Rectangle()
                     .fill(Color.blue)
@@ -49,6 +49,7 @@ struct ContentView: View {
                     .padding(5)
             }
             
+            // MARK: Shapes descriptions texts stack
             HStack {
                 Text("Quadrado")
                     .padding(9)
@@ -75,6 +76,7 @@ struct ContentView: View {
                     .foregroundColor(.yellow)
             }
             
+            // MARK: Multicolored SF Symbols stack
             HStack {
                 Image(systemName: "cloud.sun.rain.fill")
                     .font(.system(size: 50))
@@ -94,6 +96,7 @@ struct ContentView: View {
             }
             .padding(30)
             
+            // MARK: Cell stack (multicolored SF Symbols + shapes with text)
             HStack {
                 
                 VStack(spacing: 30) {
